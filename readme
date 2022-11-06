@@ -1,0 +1,23 @@
+OBJETIVO:
+	Retornar as sheets de frequencia preenchidas
+
+REQUESITOS:
+	1 - Existe um template contendo formatacao de colunas, imagens
+	2 - Cada area deve esta em uma sheet separada
+
+DESENVOLVIMENTO:
+	class FormatTableChange:
+		Realiza todas as transformacoes necessárias, afim de retornar um DataFrame contendo as seguintes colunas: [gp_wk, wk, gp_cg, cg, mat, road_map]
+		[gp_wk] = Grupo do servidor escalado para o trabalho
+		[wk] = Servidor escalado para o trabalho
+		[gp_cg] = Grupo do servidor que irá substituir 
+		[cg] = Servidor que ir substituir
+		[mat] = Matrícula do servidor que irá substituir
+		[road_map] = Roteiro de trabalho
+
+		+ data<datetime>: Data referente ao servico
+		
+		methods:
+			+ save()<void>: Salva o DataFrame com todas as formatacoes realizadas>
+			+ run()<void>: Execulta as transformacoes necessárais
+			
